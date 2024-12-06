@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* Side navigation menu start */
+body {
+  margin: 20;
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+}
+
+/* Footer styles */
+footer {
+  background-color: #083565; /* Dark blue background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+/* Ensure the footer doesn't overlap */
+html,
+body {
+  height: 100%; /* Full height of the viewport */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Makes the body a flex container */
+}
+
+body {
+  flex: 1; /* Ensures the body grows to fill the remaining space */
+}
+
+/* Content section (to align correctly above the footer) */
+.container {
+  flex: 1; /* Allows the content to expand and push the footer down */
+  margin-bottom: 20px; /* Optional margin for spacing */
+}
+
+/* HOMEPAGE START */
+.custom-opacity {
+  opacity: 0.6 !important;
+  /* Adjust the value as needed */
+}
+
+/* makes image to fit its box without losing its quality*/
+.product-image {
+  width: 100%;
+  height: 250px;
+  /* Adjust the height as needed */
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+#heroImage {
+  width: 100%;
+  height: 850px;
+  object-fit: cover;
+}
+
+#list-items a {
+  text-decoration: none;
+}
+
+/* Style for the product card */
+.product-card {
+  border: 1px solid #d4ecd1;
+  /* Faint green border */
+  padding: 10px;
+  /* Small padding */
+  border-radius: 5px;
+  /* Rounded edges */
+}
+
+/* Style for the product title */
+.title {
+  margin-top: 10px;
+  font-size: 15px;
+  color: gray;
+}
+
+/* Style for the heart and cart buttons */
+.heart-btn,
+.cart-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d4ecd1;
+  /* Faint green border */
+  border-radius: 50%;
+  /* Round shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  /* Spacing between buttons */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Style for the heart icon */
+.heart-btn .bi-heart {
+  color: red;
+  /* Red color */
+}
+
+.heart-btn:hover .bi-heart {
+  fill: red;
+  /* Red fill on hover */
+  color: red;
+}
+
+/* Style for the cart icon */
+.cart-btn .bi-cart-plus {
+  color: darkgreen;
+  /* Dark green color */
+}
+
+/* Style for the product price */
+#product-price {
+  font-size: 18px;
+  font-weight: bold;
+  /* Make text bold */
+  color: darkgreen;
+  /* Dark green color */
+  margin-right: auto;
+  /* Push it to the left */
+}
+
+/* HOMEPAGE END */
+
+/* ADMIN ORDERS PAGE START */
+/* Style for the tabs */
+.nav-tabs .nav-link {
+  color: #6c757d;
+  font-weight: 500;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.nav-tabs .nav-link.active {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #083565;
+}
+
+/* Style for the table */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-striped tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table thead th {
+  background-color: #083565;
+  color: #fff;
+}
+
+.table td img {
+  border-radius: 4px;
+}
+
+/* Button styles */
+.btn-outline-primary {
+  color: #083565;
+  border-color: #083565;
+}
+
+.btn-outline-primary:hover {
+  background-color: #083565;
+  color: #fff;
+}
+/* ADMIN ORDERS PAGE END */
+
+/* ADMIN SETTINGS PAGE START */
+.navbar {
+  padding-top: 0.6rem; /* Reduce top padding */
+  padding-bottom: 0.00005rem; /* Reduce bottom padding */
+}
+
+.navbar-brand {
+  font-size: 1.2rem; /* Adjust brand font size */
+}
+
+.navbar-nav .nav-link {
+  padding-top: 0.4rem; /* Adjust link padding */
+  padding-bottom: 0.1rem; /* Adjust link padding */
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.5rem; /* Reduce toggler button padding */
+}
